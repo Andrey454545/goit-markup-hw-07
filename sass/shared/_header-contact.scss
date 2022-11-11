@@ -1,0 +1,74 @@
+.header-contact {
+    margin-left: auto;
+}
+
+.form {
+    display: flex;
+    margin-right: 0;
+    height: 16px;
+}
+
+/*.email::after {
+    content: '';
+    display: block;
+    width: 161px;
+    height: 16px;
+    background-image: url(../img/finger\ 1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 55px;
+    margin-right: 30px;
+}*/
+
+.email-label {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;          /* прибрати підкреслення */
+    margin-right: 50px;
+    transition: color 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email-label:hover,
+.email-label:focus {
+    color: var(--accent-color);
+    outline: 0;
+}
+
+.apple {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-text-color);
+}
+
+.apple:hover {
+    color: var(--accent-color);
+}
+
+.number-icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.number{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    text-decoration: none;      
+    display: flex;
+    align-items: center;
+    transition: color 700ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.number:hover,
+.number:focus,
+.number-icon:hover,
+.number-icon:focus { 
+    color: var(--accent-color);
+    outline: 0;
+}

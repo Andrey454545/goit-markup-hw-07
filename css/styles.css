@@ -4,7 +4,6 @@
 /* акцент   #2196F3 */
 /* втор. колір фона #F5F5F5 */
 
-/* var - функція в css  */
 
 :root {
     --primary-text-color: #757575; /* всі шріфти чорні */
@@ -15,13 +14,11 @@
 }
 
 body{
-    /*background-color: #FFFFFF; */ /* фон документа */
-    /*background-color: var(--primary-white-color);*/
     color: var(--primary-text-color); 
     font-family: 'Roboto';
 } 
 
-/* селектор потомка (всі ссилки а)*/
+
 * {
     margin: 0;  /* cбросити відступи до "0" */
     padding: 0; 
@@ -51,7 +48,7 @@ ul{
 }
 
 .line {
-    border-bottom: 1px solid #ECECEC; /* робить лінію під контентом */
+    border-bottom: 1px solid #ECECEC; 
     padding-top: 24px;
     padding-bottom: 24px;
 }
@@ -60,11 +57,9 @@ ul{
     width: 1200px;
     padding-left: 0;
     padding-right: 0;
-    /*height: 80px; */      /* якщо padding то висота не потрібна */
     margin: 0 auto;
     display: flex;
-    align-items: center;    /* вирівнюємо по центру текст */
-    /*justify-content: space-between; /* розтягує по ширині */
+    align-items: center;    
 }
 
 .logo-header{
@@ -86,7 +81,6 @@ ul{
 .studio{
     color: #000000;
 }
-
 
 .frame-line {
     margin-left: 93px;
@@ -165,7 +159,7 @@ ul{
     background-position: right;
 }*/
 
-.block{
+.block {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -214,7 +208,6 @@ ul{
     margin-right: 0;
     height: 16px;
 }
-
 
 /*.email::after {
     content: '';
@@ -309,26 +302,6 @@ ul{
     color: var(--white-color);
     margin-bottom: 30px;
 }
-
-                    /*селектор состояния (при наведенні) до всіх */
-/*.section-main:hover { 
-    color: orange;
-}*/
-
-
-/*селектор focus (при наведенні) до інтерактивних (кнопки, ссилки, елементи форми) */
-/*селектор active (при натиснені) до інтерактивних (кнопки, ссилки, елементи форми) */
- /*селектор current (при наведенні (текущая страница)) до інтерактивних (кнопки, ссилки, елементи форми) */
-
-/* .section-main:active { 
-    color: rgb(255, 0, 0, 0.8);  
-}  */
-
-/* .section-main:current { 
-    color: rgb(255, 0, 0, 0.8);  
-}  */
-
-/*  color: rgb(255, 0, 0, 0.8);  4 цифра - прозрачность в % */
 
 .button-main {
     font-family: 'Roboto';
@@ -491,8 +464,7 @@ ul{
     padding-top: 27px;
     height: 70px;
     width: 100%;
-    bottom: 0;
-    
+    bottom: 0; 
 }
 
 
@@ -521,8 +493,8 @@ ul{
 .team-list {
     width: 1170px;
     height: 428px;
-    display: flex;      /*розміщення в ряд*/
-    gap: 30px;          /*відступ від обекта до наступного 30px*/
+    display: flex;      
+    gap: 30px;         
     margin: 0 auto;
 }
 
@@ -567,7 +539,7 @@ ul{
 
 .barbers-cos-list {
     display: flex;
-    justify-content: center;  /* по центру */
+    justify-content: center; 
     gap: 10px;
 }
 
@@ -576,7 +548,6 @@ ul{
     height: 44px;
 }
  
-
 .barbers-cos-link {
     width: 100%;
     height: 100%;
@@ -648,7 +619,7 @@ ul{
 
 .client-list {
     display: flex;
-    justify-content: center;  /* по центру */
+    justify-content: center; 
     gap: 30px;
 }
 
@@ -658,9 +629,6 @@ ul{
     width: calc(100%-150px) / 6;
     height: 92px;
 }
-
-
-
 
 .client-cos-link {
     width: 100%;
@@ -728,7 +696,6 @@ ul{
     width: 1600px;
     display: flex;
     margin: 0 auto;
-
 }
 
 .address-container {
@@ -796,7 +763,6 @@ ul{
     text-decoration: none;
 }
 
-
 .main-links {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -827,7 +793,7 @@ ul{
 
 .links-list {
     display: flex;
-    justify-content: center;  /* по центру */
+    justify-content: center;
     gap: 10px;
 }
 
@@ -928,8 +894,6 @@ ul{
     outline: transparent;
 }
 
-
-
 .button-mailing {
     font-family: 'Roboto';
     font-weight: 700;
@@ -962,14 +926,14 @@ ul{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);;
-    position: fixed;    /* затемнення завжди на екрані */
+    position: fixed;   
     top: 0;
     transition: opacity 250ms linear, visibility 1000ms linear;
 }
 
 .modal {
     width: 528px;           
-    height: 581px;      /* min-height - це вірно  */
+    height: 581px;     
     border-radius: 4px;
     background-color: #FFFFFF;
     position: absolute;
@@ -994,7 +958,6 @@ ul{
     position: absolute;
     right: 15px;
     top: 7px;
-                    /* від центрувати */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1013,7 +976,6 @@ ul{
     fill: var(--accent-color);
 }
 
-
 .modal-title {
     font-weight: 700;
     font-size: 20px;
@@ -1024,7 +986,6 @@ ul{
     margin-bottom: 12px;
 }
 
-
 .modal-field {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1032,7 +993,6 @@ ul{
 
 .input-wrap {
     position: relative;
-   /* margin-bottom: 10px;*/
 }
 
 .modal-input {
@@ -1110,10 +1070,6 @@ ul{
     justify-content: center;
     margin-top: 10px;
     margin-bottom: 30px;
-    /*align-items: center;
-    gap: 7px;
-    line-height: 1.71;
-    color: var(--primary-color);*/
  }
 
 
@@ -1162,8 +1118,6 @@ ul{
     fill: #FFFFFF;
 }
 
-
-
 /*
 .check-text::before {
     content: '';
@@ -1202,10 +1156,6 @@ ul{
     
 }
 
-/*text-decoration: none;           прибрати підкреслення */
-
-
-
 .modal-title {
     font-weight: 700;
     font-size: 20px;
@@ -1216,7 +1166,6 @@ ul{
     margin-bottom: 12px;
 }
 
-
 .modal-field {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -1224,7 +1173,6 @@ ul{
 
 .input-wrap {
     position: relative;
-   /* margin-bottom: 10px;*/
 }
 
 .modal-input {
@@ -1387,7 +1335,7 @@ ul{
     
 }
 
-/*text-decoration: none;           прибрати підкреслення */
+
 
 
 /*   section-portfolio   */
@@ -1408,7 +1356,7 @@ ul{
     display: flex;
     gap: 8px; 
     margin-bottom: 50px;  
-    justify-content: center;  /*вирівнює по центру бо є "display: flex" */
+    justify-content: center; 
 }
 
 .button-head { 
@@ -1427,7 +1375,6 @@ ul{
     border-radius: 4px;
     outline: 0;
 } 
-
 
 /*.five-fing::after {
     content: '';
@@ -1453,9 +1400,8 @@ ul{
      background-color: var(--accent-color);
      box-shadow: 5px -3px 5px rgb(40, 241, 164);
      color: #FFFFFF;
-     cursor: pointer;    /* курсор pointer */
-}
-
+     cursor: pointer; 
+ }   
 
 .button-portfolio {
     font-family: 'Roboto';
@@ -1468,8 +1414,8 @@ ul{
     width: 125px;
     height: 38px;
     padding: 6px 22px;
-    border: none;           /*прибирає контур кнопки*/
-    white-space: nowrap;     /*не розбивати на 2 строки*/
+    border: none;         
+    white-space: nowrap;  
     border-radius: 4px;
     outline: 0;
 }
@@ -1480,7 +1426,7 @@ ul{
 /* ------ foto-wrap -------- */
    
 .foto-wrap {
-    display: flex;     /*розміщення в ряд*/
+    display: flex;    
     flex-wrap: wrap; 
     gap: 30px;
 }
@@ -1490,26 +1436,24 @@ ul{
     border: 1px solid #ECECEC;
 }
 
-
 .foto-item:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
 .top-text-wrap:hover .top-text {
     transform: translateY(0);
 }
 
 .top-text-wrap {
-    position: relative;     /* привязуємо до картинки */
-    overflow: hidden;       /* все за кордоном батька приховати */
+    position: relative;     
+    overflow: hidden;      
     transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .top-text {
-    position: absolute;     /*  текст над картинкою */
+    position: absolute;     
     top: 0;
     font-family: 'Roboto';
     font-style: normal;
@@ -1522,16 +1466,15 @@ ul{
     padding-top: 63px;
     padding-left: 24px;
     height: 100%;
-    transform: translateY(100%);        /* опустити до низу */
+    transform: translateY(100%);       
     transition: transform 400ms linear;
-    overflow: auto;                 /* якщо тексту забагато і не влазить */
+    overflow: auto;                
 }
 
 .text-frame {
     width: 370px;
     padding: 20px 24px;
     margin: 0 auto;
-   /* border: 1px solid #ECECEC; */
 }
 
 .project-name {
