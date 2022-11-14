@@ -1,24 +1,27 @@
-.header-main {
+.header {
     padding-top: 24px;
     padding-bottom: 24px;
 }
 
 .line {
-    border-bottom: 1px solid #ECECEC; 
     padding-top: 24px;
     padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC; 
 }
 
-.header-container {
+.container {
     width: 1200px;
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 0;    
+}
+
+.header__container {
     margin: 0 auto;
     display: flex;
     align-items: center;    
 }
 
-.logo-header{
+.logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -28,28 +31,28 @@
     text-decoration: none;
 }
 
-.logo-header:focus {
+.logo:focus {
     color: var(--accent-color);
     background-color: inherit;
     outline: 0;
 }
 
-.studio{
+.logo__studio{
     color: #000000;
 }
 
-.frame-line {
+.frame__line {
     margin-left: 93px;
 }
 
-.site-nav {
+.site__nav {
     width: 281px;
     height: 16px;
     display: flex;
     gap: 50px;
 }
 
-.list-html.current { 
+.site__unit.current { 
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -60,7 +63,7 @@
 } 
 
 
-.list-html.current::after {
+.site__unit.current::after {
     content: '';
     position: absolute;
     display: block;
@@ -72,7 +75,7 @@
     bottom: -28px;
 }
 
-.list-html-label.current {
+.site__sheave.current {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -82,17 +85,17 @@
     position: relative;
 }
 
-.list-html-label:focus {
+.site__sheave:focus {
     color: var(--accent-color);
     background-color: inherit;
     outline: 0;
 }
 
-.list-html-label:hover {  
+.site__sheave:hover {  
     color: var(--title-text-color);
 } 
 
-.list-html-label::after {
+.site__sheave::after {
     content: '';
     position: absolute;
     display: block;
@@ -104,7 +107,7 @@
     bottom: -28px;
 }
 
-/*.list-html::after {
+/*.unit::after {
     content: '';
     display: inline-block;
     width: 45px;
@@ -115,7 +118,7 @@
     background-position: right;
 }*/
 
-.block {
+.site__block {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=h, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="stylesheet" href="./">
     <title>Портфоліо</title>
@@ -15,39 +15,39 @@
 </head>
 <body>  <!-- header-->
     <header class="line"> 
-        <div class="header-container">
-            <a href="./index.html" class="logo-header">
-            Web<span class="studio">Studio</span></a> 
-            <nav class="frame-line">
-                <ul class="site-nav">    <!-- ul список-->
+        <div class="container header__container">
+            <a href="./index.html" class="logo">
+            Web<span class="logo__studio">Studio</span></a> 
+            <nav class="frame frame__line">
+                <ul class="site site__nav">    <!-- ul список-->
                     <div class="hookup">
                         <li><a href="./index.html"
-                            class="block hookup">Студія</a></li>  <!-- li елемент списку-->
+                            class="site__block hookup">Студія</a></li>  <!-- li елемент списку-->
                     </div>
                     <div class="hookup">
                         <li><a href="./портфоліо.html"
-                            class="list-html-label hookup current">Портфоліо</a></li>
+                            class="site__sheave hookup current">Портфоліо</a></li>
                     </div>
                     <div class="hookup">
                         <li><a href="#блок2"
-                            class="block hookup">Контакти</a></li>
+                            class="site__block hookup">Контакти</a></li>
                     </div>
                 </ul>
             </nav>
-            <div class="header-contact">
-                <ul class="form">
+            <div class="contact header__contact">
+                <ul class="form form__conn">
                     <div class="hookup apple">
-                        <svg class="number-icon" width="16" height="12">
+                        <svg class="form__icon" width="16" height="12">
                             <use href="./img/icon.svg#icon-envelope"></use>
                             </svg>
-                            <li><a href="mailto:" class="email-label current">info@devstudio.com
+                            <li><a href="mailto:" class="form__email current">info@devstudio.com
                             </a></li>
                     </div>
                     <div class="hookup apple">
-                        <svg class="number-icon" width="10" height="16">
+                        <svg class="form__icon" width="10" height="16">
                         <use href="./img/icon.svg#icon-smartphone"></use>
                         </svg>
-                        <li><a href="tel:+380961111111" class="number">+38 096 111 11 11
+                        <li><a href="tel:+380961111111" class="form__number">+38 096 111 11 11
                         </a></li>
                     </div>
                 </ul>
@@ -258,8 +258,8 @@
                 </ul>
             </div>
 
-                <!-------  mailing ------->
-                <div class="mailing">
+            <!-------  mailing ------->
+            <div class="mailing">
                 <h3 class="maining-header maining-come">Підпишіться на розсилку</h3>
                 <div class="mailing-container">
                     <div class="mailing-field">
@@ -267,7 +267,7 @@
                             <div class="mailing-wrap">
                                 <input type="text-mailing" 
                                 name="user-name-mailing" 
-                                class="modal-input-sss" 
+                                class="modal-input-block" 
                                 placeholder="E-mail"
                                 maxlength="10"
                                 required

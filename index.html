@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=headre, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+   
     <link rel="stylesheet" href="./css/main.min.css">
     <title>Студія</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,42 +14,42 @@
 </head>
 <body> 
                 <!-------------- header ---------------->
-    <header class="header-main"> 
-        <div class="header-container">
-                <a href="./index.html" class="logo-header">
-                Web<span class="studio">Studio</span></a> 
-            <nav class="frame-line">
-                <ul class="site-nav">    <!-- ul список-->
+    <header class="header"> 
+        <div class="container header__container">
+                <a href="./index.html" class="logo">
+                Web<span class="logo__studio">Studio</span></a> 
+            <nav class="frame frame__line">
+                <ul class="site site__nav">    <!-- ul список-->
                     <div class="hookup">
                         <li><a href="./index.html"
-                            class="list-html hookup current">Студія</a></li>
+                            class="site__unit hookup current">Студія</a></li>
                     </div>
                     <div class="hookup">
                         <li><a href="./портфоліо.html"
-                            class="block hookup">Портфоліо</a></li>
+                            class="site__block hookup">Портфоліо</a></li>
                     </div> 
                     <div class="hookup">
                         <li><a href="#блок2"
-                            class="block hookup">Контакти</a></li>
+                            class="site__block hookup">Контакти</a></li>
                     </div>
                 </ul>
             </nav>
 
             <!-------------- header-contact ---------------->
-            <div class="header-contact">
-                <ul class="form">
+            <div class="contact header__contact">
+                <ul class="form form__conn">
                     <div class="hookup apple">
-                        <svg class="number-icon" width="16" height="12">
+                        <svg class="form__icon" width="16" height="12">
                             <use href="./img/icon.svg#icon-envelope"></use>
                             </svg>
-                            <li><a href="mailto:" class="email-label current">info@devstudio.com
+                            <li><a href="mailto:" class="form__email current">info@devstudio.com
                             </a></li>
                     </div>
                     <div class="hookup apple">
-                        <svg class="number-icon" width="10" height="16">
+                        <svg class="form__icon" width="10" height="16">
                         <use href="./img/icon.svg#icon-smartphone"></use>
                         </svg>
-                        <li><a href="tel:+380961111111" class="number">+38 096 111 11 11
+                        <li><a href="tel:+380961111111" class="form__number">+38 096 111 11 11
                         </a></li>
                     </div>
                 </ul>
@@ -58,7 +58,7 @@
     </header>
 
     <main>         
-                     <!-------------- main ---------------->
+                     <!-------------- main-head ---------------->
         <section class="main-head"> 
             <div class="main-container">
                 <h1 class="section-main">Ефективні рішення для <br>
@@ -72,29 +72,29 @@
         <!--onClick='location.href="./модальне вікно.html"'-->
 
                     <!------------- descrip ------------------->
-        <section class="descrip-section"> 
-            <div class="main-container entrance">
-                <h2 class="visually-hidden">Галерея</h2> 
-                <ul class="descrip-list">    
-                    <li class="title-descrip icon-mobile">
-                        <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p class="text">Ідейні міркування, і навіть початок<br>
+        <section class="descrip descrip__section"> 
+            <div class="clarity main-container entrance">
+                <h2 class="visually visually__hidden">Галерея</h2> 
+                <ul class="depiction">    
+                    <li class="depiction__title depiction__mobile">
+                        <h3 class="title title__conn">УВАГА ДО ДЕТАЛЕЙ</h3>
+                        <p class="depiction__text">Ідейні міркування, і навіть початок<br>
                         повсякденної роботи з формування<br>
                         позиції.</p> 
                     </li>
-                    <li class="title-descrip icon-clock">
-                        <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p class="text">Завдання організації, особливо рамки<br>
+                    <li class="depiction__title depiction__clock">
+                        <h3 class="title title__conn">ПУНКТУАЛЬНІСТЬ</h3>
+                        <p class="depiction__text">Завдання організації, особливо рамки<br>
                         і місце навчання кадрів тягне у себе.</p> 
                     </li>
-                    <li class="title-descrip icon-diagram">
-                        <h3 class="title">ПЛАНУВАННЯ</h3>
-                        <p class="text">Так само консультація з широким<br> 
+                    <li class="depiction__title depiction__diagram">
+                        <h3 class="title title__conn">ПЛАНУВАННЯ</h3>
+                        <p class="depiction__text">Так само консультація з широким<br> 
                         активом значною мірою зумовлює.</p>  
                     </li>
-                    <li class="title-descrip icon-astronaut">
-                        <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p class="text">Значимість цих проблем настільки<br> 
+                    <li class="depiction__title depiction__astronaut">
+                        <h3 class="title title__conn">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                        <p class="depiction__text">Значимість цих проблем настільки<br> 
                         очевидна, що реалізація планових<br>
                         завдань.</p> 
                     </li>    
@@ -286,49 +286,51 @@
                 </ul>
             </div>
         </section>
+
+
                         <!--------------- client-section ------------------->
-        <section class="client-section"> 
+        <section class="customer"> 
             <div class="main-container">
-                <h2 class="client-link">Постійні клієнти</h2> 
-                <ul class="client-list list">      
-                    <li class="client-item clients">
-                        <a href="" class="client-cos-link">
-                            <svg class="client-icon" width="106" height="60">
+                <h2 class="link client__link">Постійні клієнти</h2> 
+                <ul class="client">      
+                    <li class="client__item clients">
+                        <a href="" class="client__cos">
+                            <svg class="client__icon" width="106" height="60">
                             <use href="./img/icon.svg#icon-Logo"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item clients">
-                        <a href="" class="client-cos-link">
-                            <svg class="client-icon" width="106" height="60">
+                    <li class="client__item clients">
+                        <a href="" class="client__cos">
+                            <svg class="client__icon" width="106" height="60">
                             <use href="./img/icon.svg#icon-Logo-1"></use>
                             </svg>                                 
                         </a>
                     </li>
-                    <li class="client-item clients">
-                        <a href="" class="client-cos-link">
-                            <svg class="client-icon" width="106" height="60">
+                    <li class="client__item clients">
+                        <a href="" class="client__cos">
+                            <svg class="client__icon" width="106" height="60">
                             <use href="./img/icon.svg#icon-Logo-2"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item clients four-fing">
-                        <a href="" class="client-cos-link">
-                            <svg class="client-icon" width="106" height="60"">
+                    <li class="client__item clients four-fing">
+                        <a href="" class="client__cos">
+                            <svg class="client__icon" width="106" height="60"">
                             <use href="./img/icon.svg#icon-Logo-3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item clients">
-                        <a href="" class="client-cos-link">
-                            <svg class="client-icon" width="106" height="60"">
+                    <li class="client__item clients">
+                        <a href="" class="client__cos">
+                            <svg class="client__icon" width="106" height="60"">
                             <use href="./img/icon.svg#icon-Logo-4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li class="client-item clients">
-                        <a href="" class="client-cos-link">
-                            <svg class="client-icon" width="106" height="60"">
+                    <li class="client__item clients">
+                        <a href="" class="client__cos">
+                            <svg class="client__icon" width="106" height="60"">
                             <use href="./img/icon.svg#icon-Logo-5"></use>
                             </svg>
                         </a>
@@ -404,7 +406,7 @@
                             <div class="mailing-wrap">
                                 <input type="text-mailing" 
                                 name="user-name-mailing" 
-                                class="modal-input-sss" 
+                                class="modal-input-block" 
                                 placeholder="E-mail"
                                 maxlength="10"
                                 required
@@ -423,7 +425,7 @@
         </div>
     </footer>
 
-
+                <!-------  modal window ------->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close" type="button" data-modal-close>
@@ -433,7 +435,9 @@
             </button>
             <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
             
-            <form class="modal-form">
+                <!------- form ------->
+
+            <form>
                 <div class="modal-field">
                     <label for="user-name" class="input-label"><span>Ім'я</span>
                         <div class="input-wrap">
@@ -507,8 +511,9 @@
                 </div>
                 -->
 
-
-                <div class="modal-field-comment">
+                    <!----------terms---------->
+                    
+                <div class="modal-comment">
                     <input type="checkbox"  
                         name="privacy" 
                         id="privacy" 
