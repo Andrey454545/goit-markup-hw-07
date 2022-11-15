@@ -38,14 +38,27 @@
     transition-property: transform, background-color, box-shadow;
     transition-duration: 700ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+<<<<<<< HEAD
     &:focus,
     &:hover {
     transform: scale(2);
     background-color: var(--accent-color);
     box-shadow: 5px -3px 5px rgb(64, 226, 199);
     }
+=======
+>>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 }
 
 .links-cos-icon {
     fill: currentColor;
 }
+<<<<<<< HEAD
+=======
+
+.links-cos-link:focus,
+.links-cos-link:hover {
+    transform: scale(2);
+    background-color: var(--accent-color);
+    box-shadow: 5px -3px 5px rgb(64, 226, 199);
+}
+>>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2

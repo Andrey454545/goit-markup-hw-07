@@ -36,6 +36,15 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+.logo:focus {
+    color: var(--accent-color);
+    background-color: inherit;
+    outline: 0;
+}
+
+>>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .logo__studio{
     color: #000000;
 }
@@ -72,6 +81,22 @@
     }
 } 
 
+<<<<<<< HEAD
+=======
+
+.site__unit.current::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: -28px;
+}
+
+>>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .site__sheave.current {
     font-weight: 500;
     font-size: 14px;
@@ -101,6 +126,42 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+.site__sheave:focus {
+    color: var(--accent-color);
+    background-color: inherit;
+    outline: 0;
+}
+
+.site__sheave:hover {  
+    color: var(--title-text-color);
+} 
+
+.site__sheave::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: -28px;
+}
+
+/*.unit::after {
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 16px;
+    background-image: url(../img/finger\ 1.png);
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    background-position: right;
+}*/
+
+>>>>>>> 20d1b689e75789971c3b1ecf9cb176217128ddc2
 .site__block {
     font-weight: 500;
     font-size: 14px;
