@@ -1,26 +1,17 @@
-.header-contact {
+.header__contact {
     margin-left: auto;
 }
 
 .form {
     display: flex;
-    margin-right: 0;
     height: 16px;
 }
 
-/*.email::after {
-    content: '';
-    display: block;
-    width: 161px;
-    height: 16px;
-    background-image: url(../img/finger\ 1.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-position: 55px;
-    margin-right: 30px;
-}*/
+.form__conn {
+    margin-right: 0;
+}
 
-.email-label {
+.form__email {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -29,12 +20,11 @@
     text-decoration: none;          /* прибрати підкреслення */
     margin-right: 50px;
     transition: color 700ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.email-label:hover,
-.email-label:focus {
+    &:hover,
+    &:focus {
     color: var(--accent-color);
     outline: 0;
+    }
 }
 
 .apple {
@@ -42,18 +32,22 @@
     align-items: center;
     justify-content: center;
     color: var(--primary-text-color);
+    &:hover {
+        color: var(--accent-color);
+    }
 }
 
-.apple:hover {
-    color: var(--accent-color);
-}
-
-.number-icon {
+.form__icon {
     fill: currentColor;
     margin-right: 10px;
+    &:hover,
+    &:focus { 
+        color: var(--accent-color);
+        outline: 0;
+    }
 }
 
-.number{
+.form__number {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
@@ -63,12 +57,10 @@
     display: flex;
     align-items: center;
     transition: color 700ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus { 
+        color: var(--accent-color);
+        outline: 0;
+    }
 }
 
-.number:hover,
-.number:focus,
-.number-icon:hover,
-.number-icon:focus { 
-    color: var(--accent-color);
-    outline: 0;
-}

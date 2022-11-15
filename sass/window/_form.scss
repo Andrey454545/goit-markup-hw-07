@@ -1,0 +1,78 @@
+.modal-field {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-wrap {
+    position: relative;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    padding-left: 42px;
+    outline: transparent;
+    &:focus {
+        border-color: var(--accent-color);
+    }
+    &::placeholder {
+        font-size: 13px;
+        color: teal;
+    }   
+    &:not(:focus):not(::placeholder-shown):valid {
+        background-color: rgba(0, 128, 0, 0.373);
+    }
+    
+    &:not(:focus):not(::placeholder-shown):invalid {
+        background-color: rgba(128, 32, 0, 0.373);
+    }
+}
+
+.modal-text {
+    width: 100%;
+    height: 120px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-top: 12px;
+    padding-left: 16px;
+
+    // resize: none;
+    &::placeholder {
+        font-size: 13px;
+        color: teal;
+    }
+}
+
+.input-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.input-label span {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.modal-input-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    .modal-input:focus + & {
+        fill: var(--accent-color);
+    }
+}
